@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <article class="card" data-testid="test-profile-card">
+      <!-- Avatar -->
+      <figure class="avatar-wrapper">
+        <img
+          src="https://i.pravatar.cc/150?img=12"
+          alt="User profile avatar"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <!-- Content -->
+      <div class="content">
+        <header>
+          <h2 data-testid="test-user-name">OBAAH SHADRACH</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Frontend learner, forex trader, and creative builder focused on UI/UX
+          and clean web experiences.
+        </p>
+
+        <!-- Time -->
+        <p class="time" data-testid="test-user-time" aria-live="polite"></p>
+
+        <!-- Social Links -->
+        <nav data-testid="test-user-social-links">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-twitter"
+            >Twitter</a
+          >
+
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-github"
+            >GitHub</a
+          >
+
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-linkedin"
+            >LinkedIn</a
+          >
+        </nav>
+
+        <!-- Hobbies -->
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Trading</li>
+            <li>Design</li>
+            <li>Coding</li>
+          </ul>
+        </section>
+
+        <!-- Dislikes -->
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Cluttered UI</li>
+            <li>Slow websites</li>
+            <li>Bad typography</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
